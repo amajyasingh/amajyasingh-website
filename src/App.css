@@ -1,38 +1,67 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  background-image: url("https://images.pexels.com/photos/13203904/pexels-photo-13203904.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chatbox {
+  border: 1px solid #ccc;
+  width: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  overflow: hidden;
+  border-radius:50%;
+}
+
+.message-container {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-image: url("https://images.pexels.com/photos/10049760/pexels-photo-10049760.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load");
+
+}
+
+.message {
+  width: 70%;
+  padding: 5px 10px;
+  margin-top: 60px;
+  margin-left: 45px;
+  border-radius:20%;
+}
+
+.user {
+  align-self: flex-end;
+  background-color: #007bff;
   color: white;
+  background-image: url("https://images.pexels.com/photos/128611/pexels-photo-128611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 
-.App-link {
-  color: #61dafb;
+.input-container {
+  display: flex;
+  padding: 10px;
+  width: 90%;
+  margin-left: 20px;
+  margin-top:40%;
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius:30%;
+  margin-right: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
